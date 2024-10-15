@@ -1,4 +1,4 @@
-#include "flutter_webrtc_plus/flutter_web_r_t_c_plugin.h"
+#include "flutter_webrtc/flutter_web_r_t_c_plugin.h"
 
 #include "flutter_common.h"
 #include "flutter_webrtc.h"
@@ -65,13 +65,8 @@ class FlutterWebRTCPluginImpl : public FlutterWebRTCPlugin {
 
 }  // namespace flutter_webrtc_plugin
 
-#if defined(_WINDOWS)
-void FlutterWebRTCPluginRegisterWithRegistrar(
-    FlutterDesktopPluginRegistrarRef registrar) {
-#else
 void flutter_web_r_t_c_plugin_register_with_registrar(
     FlPluginRegistrar* registrar) {
-#endif
   static auto* plugin_registrar = new flutter::PluginRegistrar(registrar);
   flutter_webrtc_plugin::FlutterWebRTCPluginImpl::RegisterWithRegistrar(
       plugin_registrar);

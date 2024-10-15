@@ -129,17 +129,17 @@ class AndroidAudioConfiguration {
   Map<String, dynamic> toMap() => <String, dynamic>{
         if (manageAudioFocus != null) 'manageAudioFocus': manageAudioFocus!,
         if (androidAudioMode != null)
-          'androidAudioMode': androidAudioMode!.value,
+          'androidAudioMode': androidAudioMode!.name,
         if (androidAudioFocusMode != null)
-          'androidAudioFocusMode': androidAudioFocusMode!.value,
+          'androidAudioFocusMode': androidAudioFocusMode!.name,
         if (androidAudioStreamType != null)
-          'androidAudioStreamType': androidAudioStreamType!.value,
+          'androidAudioStreamType': androidAudioStreamType!.name,
         if (androidAudioAttributesUsageType != null)
           'androidAudioAttributesUsageType':
-              androidAudioAttributesUsageType!.value,
+              androidAudioAttributesUsageType!.name,
         if (androidAudioAttributesContentType != null)
           'androidAudioAttributesContentType':
-              androidAudioAttributesContentType!.value,
+              androidAudioAttributesContentType!.name,
         if (forceHandleAudioRouting != null)
           'forceHandleAudioRouting': forceHandleAudioRouting!,
       };

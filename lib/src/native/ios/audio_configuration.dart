@@ -70,11 +70,11 @@ class AppleAudioConfiguration {
 
   Map<String, dynamic> toMap() => <String, dynamic>{
         if (appleAudioCategory != null)
-          'appleAudioCategory': appleAudioCategory!.value,
+          'appleAudioCategory': appleAudioCategory!.name,
         if (appleAudioCategoryOptions != null)
           'appleAudioCategoryOptions':
-              appleAudioCategoryOptions!.map((e) => e.value).toList(),
-        if (appleAudioMode != null) 'appleAudioMode': appleAudioMode!.value,
+              appleAudioCategoryOptions!.map((e) => e.name).toList(),
+        if (appleAudioMode != null) 'appleAudioMode': appleAudioMode!.name,
       };
 }
 
